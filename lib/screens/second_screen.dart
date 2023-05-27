@@ -1,4 +1,5 @@
 import 'package:admin_view/screens/fifth_screen.dart';
+import 'package:admin_view/screens/fourth_screen.dart';
 import 'package:admin_view/screens/third_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -36,7 +37,10 @@ class _HomeScreenState extends State<Admins2> {
             Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 20)),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Admins4()));
+              },
               child: Text('View Timetable'),
               style: ButtonStyle(
                 minimumSize: MaterialStateProperty.all<Size>(Size(200, 50)),
